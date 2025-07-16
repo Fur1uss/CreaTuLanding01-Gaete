@@ -2,20 +2,31 @@
 
 }
 
+@font-face {
+    font-family: 'PirataOne-Regular';
+    src: url('../../assets/fonts/PirataOne-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: "Poppins-Bold";
+    src: url("../../assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Poppins-Light";
+    src: url("../../assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+
 body {
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-image: url("./assets/images/mainBackground.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 section {
     width: 100%;
     height: 100vh;
-    min-height: 100vh;
 }
 
 header {
@@ -32,8 +43,16 @@ main {
     justify-content: flex-end;
     flex-direction: column;
     padding: 0 20px;
-    box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;  
+
+
+    background-image: url("./assets/images/mainBackground.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .clothes {
     width: 100%;
@@ -75,6 +94,195 @@ main {
     position: absolute;
     z-index: 1;
 }
+
+.divider-sections{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.afiche-container{
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1a1a1a;
+
+
+}
+
+.afiche-content{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #141414;
+}
+
+.models-banner-container h2{
+    font-size: clamp(6rem, 14vw, 20rem);
+    color: #97fd3f;
+    font-weight: 600;
+    font-family: 'PirataOne-Regular', sans-serif;
+    letter-spacing: 0.1rem;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    bottom: -40%;
+    white-space: nowrap;
+
+    z-index: 4;
+}
+
+.models-banner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 70%;
+
+    z-index: 1;
+}
+
+
+.side-model{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+
+    
+}
+
+
+.main-model{
+    margin: 0;
+    padding: 0;
+
+    height: 120%;
+    object-fit: contain;
+    z-index: 5;
+
+    position: relative;
+    top: 30%;
+}
+
+.text-banner-container{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+
+    width: 100%;
+    height: 10%;
+
+    background-color: #97fd3f;
+
+    z-index: 1;
+}
+
+.divider-img-container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+
+    background-color: #141414;
+}
+
+.divider-img{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 2;
+}
+
+
+.section-marketstore{
+    display: block;
+    margin-top: 20px;
+    height: auto;
+}
+
+.marketstore-buttons-filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.marketstore-buttons-filters button{
+    margin: 0;
+    background-color: #97fd3f;
+    color: #000000;
+    font-size: clamp(.1rem, 4vw, 2rem);
+    font-weight: 900;
+    border: none;
+
+    width: 30%;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.marketstore-buttons-filters button:hover{
+    
+    background-color: #fcfcfc;
+}
+
+.productShowcase-StockContainer p{
+    color: #000000;
+}
+
+
+.container-grid-products{
+    display: grid;
+
+    height: auto;
+    width: auto;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    gap: 2rem; /* espacio entre tarjetas */
+    justify-items: center; /* centra horizontalmente cada card */
+    padding: 2rem; /* espacio interior del grid */
+
+    margin-top: 20px;
+}
+
 
 /* Media Queries para Responsive Design */
 
@@ -147,6 +355,7 @@ main {
         height: 100%;
         min-height: 250px;
     }
+    
 }
 
 /* Tablets (769px - 1024px) */
@@ -209,5 +418,20 @@ main {
     
     .cloth {
         min-height: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px), screen and (max-height: 500px) and (orientation: landscape) {
+    .afiche-container {
+        
+    }
+    .afiche-content {
+        
+    }
+    .divider-img-container {
+        
+    }
+    .divider-img {
+        
     }
 }

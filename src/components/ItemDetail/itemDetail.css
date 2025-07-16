@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'PirataOne-Regular';
+    src: url('../../assets/fonts/PirataOne-Regular.ttf') format('truetype');
+}
+
+
+.infoProductContainer{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.infoImageContainer{
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 100%;
+
+    border-bottom:1px solid black;
+    border-left: 1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    margin: 0;
+
+}
+
+.infoImageContainer h4{
+    color: black;
+    font-size: clamp(.1rem, 4vw, 2rem);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.infoImageContainer p{
+    color: black;
+    font-size: larger;
+    font-weight: lighter;
+
+}
+
+.infoImageContainer img{
+    width: 50vh;
+    height: auto;
+}
+
+.purchaseOptionContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.description{
+    
+    color: white;
+    font-size: clamp(.1rem, 4vw, 1rem);
+    font-weight: lighter;
+    margin: 0;
+}
+
+.price{
+    color: white;
+    font-size: clamp(.1rem, 5vw, 2rem);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.shopButton{
+    background-color: #97fd3f;
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    width: 150px;
+    height: 50px;
+
+    margin: 0;
+    cursor: pointer;
+}
+
+.shopButton:hover{
+    background-color: #ffffff;
+    color: #97fd3f;
+}
+
+

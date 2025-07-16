@@ -1,8 +1,27 @@
+import { useEffect, useState } from "react";
 import "./ItemListContainer.css"
 
-const ItemListContainer = ({slogan}) => {
+import useProducts from "../../hooks/useProducts.js";
+import {ItemList} from "../itemList/itemList.jsx";
+import Loading from "../Loading/loading.jsx";
+import { useParams } from "react-router-dom";
+
+const ItemListContainer = ({}) => {
+    const { category } = useParams();
+    const { products,loading } = useProducts(category);
+
+    console.log(category)
+
     return (
-        <h1>{slogan}</h1>
+        <>
+        <div className="container-grid-products">
+            {
+                loading ? <Loading /> : <ItemList products = {products} />
+            }
+        </div>
+
+            
+        </>
     );
 }
 
