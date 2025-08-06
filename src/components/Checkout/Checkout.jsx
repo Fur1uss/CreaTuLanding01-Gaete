@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useState } from "react";
-import "./Checkout.css";
+import "./checkout.css";
 import { CartContext } from "../../context/CartContext";
 import FormCheckout from "../FormCheckout/FormCheckout";
 import { addDoc, collection } from "firebase/firestore";
