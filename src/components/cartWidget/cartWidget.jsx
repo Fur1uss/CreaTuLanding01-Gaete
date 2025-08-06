@@ -1,5 +1,5 @@
 import "./cartWidget.css"
-const cartImage = "./src/assets/images/shopping-bag.png"
+const cartImage = "/images/shopping-bag.png"
 
 import { useContext } from "react";
 import { CartContext } from "../../context/cartContext";

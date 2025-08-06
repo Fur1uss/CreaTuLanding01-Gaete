@@ -1,5 +1,5 @@
-const cobwebs = "./src/assets/images/Cobwebs.png"
-const cloth = "./src/assets/images/Cloth.png"
+const cobwebs = "/images/Cobwebs.png"
+const cloth = "/images/Cloth.png"
 
 
 const MainSection = () =>{

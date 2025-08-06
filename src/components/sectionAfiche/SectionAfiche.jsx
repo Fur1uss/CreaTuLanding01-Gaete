@@ -1,7 +1,7 @@
-const leftModel = "./src/assets/images/left-model.webp"
-const rightModel = "./src/assets/images/right-model.webp"
-const mainModel = "./src/assets/images/main-model.webp"
-const divider = "./src/assets/images/divisor-papel.png"
+const leftModel = "/images/left-model.webp"
+const rightModel = "/images/right-model.webp"
+const mainModel = "/images/main-model.webp"
+const divider = "/images/divisor-papel.png"
 
 import MarqueeBanner from "../MarqueeBanner/MarqueeBanner"
 

@@ -3,7 +3,7 @@ import CartWidget from "../cartWidget/cartWidget"
 import { Link } from "react-router-dom";
 
 function NavBar() {
-    const logo = "./src/assets/images/logo.png"
+    const logo = "/images/logo.png";
 
     return (
         <header>
