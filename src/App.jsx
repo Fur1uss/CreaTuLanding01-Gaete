@@ -5,7 +5,7 @@ import NavBar from './components/navBar/navBar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
 
 import HomePage from './components/homePage/HomePage';
 import { CartProvider } from "./context/CartContext";
