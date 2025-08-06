@@ -5,10 +5,10 @@ import NavBar from './components/navBar/navBar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 import HomePage from './components/homePage/HomePage';
-import { CartProvider } from './context/cartContext';
+import { CartProvider } from "./context/CartContext";
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 

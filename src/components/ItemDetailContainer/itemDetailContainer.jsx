@@ -1,5 +1,5 @@
 import useProduct from "../../hooks/useProduct.js";
-import Loading from "../Loading/loading";
+import Loading from "../Loading/loading.jsx";
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import { useParams } from "react-router-dom";
 
