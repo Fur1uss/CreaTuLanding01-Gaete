@@ -266,4 +266,4 @@ const getProductById = (productId) => {
   });
 };
 
-export { getProducts, getProductById };
+export {getProducts, getProductById };

@@ -1,6 +1,16 @@
-import "./itemDetail.css"
+import "./itemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../../context/cartContext";
 
 const ItemDetail = ({product = {}}) => {
+
+    const {addProductInCart} = useContext(CartContext);
+    const addProduct = (quantity) => {
+        const productCart = {...product, quantity}
+        addProductInCart(productCart);
+    }
+
     return(
         <div className="infoProductContainer">
             <div className="infoImageContainer">
@@ -14,7 +24,7 @@ const ItemDetail = ({product = {}}) => {
                 </div>
 
                 <div>
-                    <button className="shopButton">Agregar al carrito</button>
+                    <ItemCount stock = {product.stock} addProduct = {addProduct} />
                 </div>
             </div>
 

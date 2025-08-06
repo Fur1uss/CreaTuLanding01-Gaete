@@ -13,6 +13,8 @@
 
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+
+    position: relative;
 }
 
 .cartWidget:hover {
@@ -24,6 +26,27 @@
     height: 60%;
     object-fit: contain;
     flex-shrink: 0;
+}
+
+.quantityContainer{
+    background-color: #97fd3f;
+    width: clamp(20px, 1vw, 2px);
+    height: clamp(20px, 1vw, 2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    
+    border-radius: 100%;
+}
+
+.quantityContainer p {
+    color: black;
+    font-weight: bolder;
+    font-size: clamp(.1rem, 2vw, 1rem);;
 }
 
 /* Media Queries para Responsive Design */
@@ -39,6 +62,19 @@
     .cartWidget img {
         width: 65%;
         height: 65%;
+    }
+
+    .quantityContainer{
+        background-color: #97fd3f;
+        width: clamp(20px, 8vw, 2px);
+        height: clamp(20px, 8vw, 2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        position: absolute;
+        bottom: 1%;
+        right: 1%;
     }
 }
 
